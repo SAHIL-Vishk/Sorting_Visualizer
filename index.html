@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTING_VSUALIZER</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="array">
+                <p>Size of Array:</p>
+                <input id="size" type="range" min="10" max=200 step=1 value=80>
+                <p>Speed of Algorithm:</p>
+                <input id="speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="generate">Generate New Array</button>
+            </div>
+            <div class="header_r">
+                <p class="nav_header">SORTING_VISUALIZER</p>
+                <div class="algos">
+                    <button>BUBBLE</button>
+                    <button>SELECTION</button>
+                    <button>INSERTION</button>
+                    <button>MERGE</button>
+                    <button>QUICK</button>
+                    <button>HEAP</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="Info_cont1">
+            <h3>TIME COMPLEXITY</h3>
+            <div class="Complexity" id="time_complexity">
+                <div class="pair">
+                    <p class="heading">WORST CASE:</p>
+                    <p id="worst"></p>
+                </div>
+                <div class="pair">
+                    <p class="heading">BEST CASE:</p>
+                    <p id="best"></p>
+                </div>
+                <div class="pair">
+                    <p class="heading">AVERAGE CASE:</p>
+                    <p id="average"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="array_cont"></div>
+
+        <div id="Info_cont2">
+            <h3>SPACE COMPLEXITY:</h3>
+            <div class="Complexity" id="space_complexity">
+                <div class="pair">
+                    <p class="heading">SPACE:</p>
+                    <p id="space_worst"></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer>
+    </footer>
+
+    <script src="./Scripts/main.js"></script>
+    <script src="./Scripts/Bubble.js"></script>
+    <script src="./Scripts/Merge.js"></script>
+    <script src="./Scripts/Quick.js"></script>
+    <script src="./Scripts/Selection.js"></script>
+    <script src="./Scripts/Insertion.js"></script>
+    <script src="./Scripts/Heap.js"></script>
+    <script src="./Scripts/visualisation.js"></script>
+</body>
+</html>
